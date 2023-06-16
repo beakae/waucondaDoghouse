@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wauconda Doghouse</title>
+
+    <!-- materialize icons, css& js -->
+    <link type="text/css" href="/css/materialize.css" rel="stylesheet">
+    <link type="text/css" href="/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <link rel="manifest" href="/mainfest.json">
+    <!--Apple Support-->
+    <link rel="apple-touch-icon" href="/img/icons/96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#FFD700">
+    <meta name="theme-color" content="#FFFFFF">
+    <style>
+    .userprofile{
+      position: relative;
+      bottom: 8px;
+      float:right;
+    }
+
+      .contentBox {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        margin-top:10%;
+      }
+      
+      .borderStyling {
+        border-color:blueviolet; /* change to purple */
+        border-style:solid;
+        border-radius:100%
+      }
+
+
+    /*
+    @media only screen and (max-width: 600px) {
+      .fontsizeTitle {
+        font-size:20px
+      }
+      .fontsizeHeader {
+        font-size:8px
+      }
+    }
+    change to on screen only large
+    .titlemove{
+      margin-left:10%
+    } */
+    </style>
+</head>
+
+<body>
+
+  <nav class="nav-wraper purple darken-1">
+    <div class="">
+      <a href="#" class="brand-logo fontsizeTitle right">WHS Doghouse</a>
+      <a href="#" class="sidenav-trigger" data-target="side-menu">
+        <i class="material-icons">menu</i>
+      </a>
+      <!--
+      <a href=""class="btn-floating" >
+        <i class="material-icons userprofile">person</i>
+      </a>
+      -->
+      <ul class="left hide-on-med-and-down">
+        <li class="firstnav"><a href="index.html">
+          <i class="material-icons left">home</i>
+          Home</a></li>
+        <li><a href="/pages/whatsnew.html">
+          <i class="material-icons left">feed</i>
+          What's New</a></li>
+        <li><a href="/pages/calendar.html">
+          <i class="material-icons left">calendar_month</i>
+          Calendar</a></li>
+        <li><a href="/pages/socialmedia.html">
+            <i class="material-icons left">groups</i>
+            Social Media</a></li>
+        <li><a href="/pages/contactus.html">
+          <i class="material-icons left">outgoing_mail</i>
+          Contact Us</a></li>
+        <li><a href="/pages/settings.html">
+          <i class="material-icons left">settings</i>
+            Settings</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--side nav for small screens-->
+  <ul id="side-menu" class="sidenav"> 
+    <li class="firstnav"><a href="/index.html">
+      <i class="material-icons">home</i> <!--material icons from line 12-->
+      Home</a></li>
+    <li><a href="/pages/whatsnew.html">
+      <i class="material-icons">feed</i>
+      What's New</a></li>
+    <li><a href="/pages/calendar.html">
+      <i class="material-icons">calendar_month</i>
+      Calendar</a></li>
+    <li><a href="/pages/socialmedia.html">
+        <i class="material-icons">groups</i>
+        Social Media</a></li>
+    <li><a href="/pages/contactus.html">
+      <i class="material-icons">outgoing_mail</i>
+      Contact Us</a></li>
+    <li><a href="/pages/settings.html">
+      <i class="material-icons">settings</i>
+        Settings</a></li>
+  </ul>
+
+<div class="row center-align">
+  <div class="col s12">
+    <div class="no-pad"> 
+    <img src="img/whs.jpeg" class="responsive-img" alt="WHS-Image">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col s4">
+      <a href="https://docs.google.com/document/d/1IyQr6n7cSv1nwTs7km0iSB0G5H9Nf_hQZ02hJhjbQ3Y/edit?usp=sharing">
+        <img src="img/map-icon.png" alt="map" class="responsive-img">
+      </a>
+    </div>
+    <div class="col s4">
+      <a href="https://www.d118.org/schools/whs/whs-attendance">
+        <img src="img/attendance-icon.png" alt="attendance" class="responsive-img">
+      </a>
+    </div>
+    <div class="col s4">
+      <a href="https://docs.google.com/document/d/1k5TZxaaD-kbxY3KREi92nQSK9XhTNqX-y2QLL2KhN7c/edit">
+        <img src="img/schedule-icon.png" alt="schedule" class="responsive-img">
+      </a>    
+    </div>
+    <div class="col s4">
+      <a href="https://www.d118.org/schools/whs/whs-staff-directory"> 
+        <img src="img/staff-icon.png" alt="tickets" class="responsive-img">
+      </a>    
+    </div>
+    <div class="col s4">
+      <a href="https://www.d118.org/schools/whs/athletics-and-activities">
+        <img src="img/athletics-icon.png" alt="athletics" class="responsive-img">
+      </a>    
+    </div>
+    <div class="col s4">
+      <a href="https://www.d118.org/students/say-something">
+        <img src="img/textatip-icon.png" alt="text-a-tip" class="responsive-img">
+      </a>    
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="img/ad.png" alt="ad" class="responsive-img">
+</div>
+<!--
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+  import { getDatabase } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyA9-iobTVNRjzOMpLwKvXYoCE1xfkhHKPQ",
+    authDomain: "wauconda-doghouse.firebaseapp.com",
+    projectId: "wauconda-doghouse",
+    storageBucket: "wauconda-doghouse.appspot.com",
+    messagingSenderId: "240892996575",
+    appId: "1:240892996575:web:6b07323ed78b71975e326a",
+    measurementId: "G-CDSRN658QP"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const db = firebase.firestore();
+</script>
+  <script src="/js/db.js"></script> 
+-->
+
+<script src="/js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.parallax').parallax();
+  });
+</script>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyA9-iobTVNRjzOMpLwKvXYoCE1xfkhHKPQ",
+    authDomain: "wauconda-doghouse.firebaseapp.com",
+    projectId: "wauconda-doghouse",
+    storageBucket: "wauconda-doghouse.appspot.com",
+    messagingSenderId: "240892996575",
+    appId: "1:240892996575:web:6b07323ed78b71975e326a",
+    measurementId: "G-CDSRN658QP"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+  <script src="/js/db.js"></script> 
+
+
+  <script src="/js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+    });
+  </script>
+</body>
+</html>
+

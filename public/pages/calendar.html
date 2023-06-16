@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <link rel="manifest" href="/mainfest.json">
+    
+    <!--Apple Support-->
+    <link rel="apple-touch-icon" href="/img/icons/96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#FFD700">
+    
+    <meta name="theme-color" content="#FFFFFF">
+
+    <style>
+      .iframe-container {
+        overflow: hidden;
+        /* 16:9 aspect ratio */
+        padding-top: calc(120%);
+        position: relative;
+      }
+      .iframe-container iframe {
+         border: 5px solid;
+         border-color:#FBE90C;
+         height: 100%;
+         left: 0;
+         position: absolute;
+         top: 0;
+         width: 90%;
+      }
+      </style>
+
+</head>
+<body>
+  <nav class="nav-wraper purple darken-1">
+    <div class="container">
+      <a href="/index.html" class="brand-logo right"></a>
+      <a href="#" class="sidenav-trigger" data-target="side-menu">
+        <i class="material-icons">menu</i>
+      </a>
+
+      <div class="col s12">
+        <a href="/index.html" class="breadcrumb">Home</a>
+        <a href="/pages/calendar.html" class="breadcrumb">Calendar</a>
+      </div>
+    </div>
+  </nav>
+
+  <ul id="side-menu" class="sidenav">
+    <li><a href="/index.html">
+      <i class="material-icons">home</i>
+      Home</a></li>
+    <li><a href="/pages/whatsnew.html">
+      <i class="material-icons">feed</i>
+      What's New</a></li>
+    <li><a href="/">
+      <i class="material-icons">calendar_month</i>
+      Calendar</a></li>
+    <li><a href="/pages/socialmedia.html">
+        <i class="material-icons">groups</i>
+        Social Media</a></li>
+    <li><a href="/pages/contactus.html">
+      <i class="material-icons">outgoing_mail</i>
+      Contact Us</a></li>
+    <li><a href="/pages/settings.html">
+      <i class="material-icons">settings</i>
+        Settings</a></li>
+  </ul>
+
+  <div class="container">
+    <p class="center-align flow-text" style="margin:auto; font-weight:bold; padding-top:5%; font-family:Arial;"> Our Calendar! </p>
+    <hr style="width:75%">
+    <p class="center-align" style=" font: size 0.75REM; margin:auto; text-indent:20px; font-family:Arial;">Never forget a deadline again with our calendar. Stay on top of important tasks and projects with customizable reminders and due dates. Maximize your productivity and plan your travel itinerary by staying on top! </p>
+  </div>
+
+  <div style="margin-top:9%; margin-left:9%">
+    <div class="iframe-container">
+      <iframe  
+      src="https://calendar.google.com/calendar/u/0/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America/Chicago&showDate=0&showTz=0&mode=AGENDA&src=Y19nOGoybXUzNDh2amFmb24wZWVwYnVnc2tjb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19wdWYxMzFiZjMxZzJzNjU3cWxpbmwzcmFyc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MmY2bnYzcGIxMDNuMnVpYWhyOW04aGk3aTgxb3Q2dW1AaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23F6BF26&color=%238E24AA&color=%238E24AA"></iframe>
+    </div>
+  </div>
+
+  
+
+
+<script src="/js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+
+
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
+
+</body>
+</html>
