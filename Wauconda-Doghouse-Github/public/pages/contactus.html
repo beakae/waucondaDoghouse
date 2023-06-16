@@ -1,0 +1,234 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <link rel="manifest" href="/mainfest.json">
+    
+    <!--Apple Support-->
+    <link rel="apple-touch-icon" href="/img/icons/96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#FFD700">
+ 
+    <meta name="theme-color" content="#FFFFFF">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+
+      h1.Bubble{
+        font-family: 'Balsamiq Sans', cursive;
+        -webkit-text-fill-color: yellow;
+        -webkit-text-stroke-color:purple;
+        -webkit-text-stroke-width:4px;
+        margin-top:10px;
+      }
+    input[type="text"]:not(.browser-default):focus:not([readonly])+label,
+    textarea.materialize-textarea:focus:not([readonly])+label {
+      color: gold;
+    }
+    /* Replace "your-color" with your desired color value */
+    input[type="text"]:not(.browser-default):focus:not([readonly]) {
+      color: purple;
+      border-bottom-color: gold;
+    }
+    /* label color */
+    .inputField label {
+      color: gold;
+    }
+     /* valid color */
+    .inputField input[type=text].valid {
+      border-bottom: 1px solid gold;
+      box-shadow: 0 1px 0 0 gold;
+    }
+    a.modalLink:active {
+      color:black;
+    }
+    a.modalLink:visited {
+      color:black;
+    }
+    a:hover {
+      color:purple;
+    }
+    a.modalLink:link {
+      color:black;
+    }
+    /* do the rest later */
+
+    </style>
+</head>
+<body>
+  <nav class="nav-wraper purple darken-1">
+    <div class="">
+      <a href="/index.html" class="brand-logo right"><!--Wauconda Doghouse used to go here--></a>
+      <a href="#" class="sidenav-trigger" data-target="side-menu">
+        <i class="material-icons">menu</i>
+      </a>
+
+      <div class="col s12">
+        <a href="/index.html" class="breadcrumb">Home</a>
+        <a href="/pages/contactus.html" class="breadcrumb">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+    
+      <ul id="side-menu" class="sidenav">
+        <li><a href="/index.html">
+          <i class="material-icons">home</i>
+          Home</a></li>
+        <li><a href="/pages/whatsnew.html">
+          <i class="material-icons">feed</i>
+          What's New</a></li>
+        <li><a href="/pages/calendar.html">
+          <i class="material-icons">calendar_month</i>
+          Calendar</a></li>
+        <li><a href="/pages/socialmedia.html">
+            <i class="material-icons">groups</i>
+            Social Media</a></li>
+        <li><a href="/">
+          <i class="material-icons">outgoing_mail</i>
+          Contact Us</a></li>
+        <li><a href="/pages/settings.html">
+          <i class="material-icons">settings</i>
+            Settings</a></li>
+      </ul>
+
+      <h1 class="Bubble" style="text-align: center;">Have Questions?</h1>
+
+      <div class="container" style="margin-top:-5px;">
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header"><i class="material-icons" style="color:purple">contact_page</i>School Contact Info</div>
+            <div class="collapsible-body"><span>Phone: (847) 526-6611 <br> Email: <a href="mailto:dwilm@d118.org"> dklett@d118.org</a> <br> Address: 505 N Main St, Wauconda, IL 60084. <br> Helpdesk: <a href="https://www.d118-helpdesk.info/" target="_blank">https://www.d118-helpdesk.info/</a></span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons" style="color:purple">groups</i>Staff Directory</div>
+            <div class="collapsible-body"><span> Staff Information: <a href= "https://www.d118.org/schools/whs/whs-staff-directory"> Staff Directory </a> <br> Athletic Coach Information: <a href= "https://docs.google.com/spreadsheets/d/1yDV2_rkWy5qlvdjoLTbOkgGCDZQ0uF3cjCsh7OO53_E/edit?usp=sharing"> Athletic Directory</a> <br> Activity Sponsor Information: <a href= "https://docs.google.com/spreadsheets/d/1a6IJPGuLJDTVNj3uRQmvmiv0npA5FqkkWaRCFUei_tQ/edit?usp=sharing"> Sponsor Directory</a></span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons" style="color:purple">contact_support</i><a href="#modal1" class="modal-trigger modalLink">Report a Bug</a></div>
+            <div class="collapsible-body"><span>Thank you for helping improve our app.</span></div> 
+          </li>
+        </ul>
+      </div>
+
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Bug Report</h4>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix" style="color:purple">forward_to_inbox</i>
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                  <span class="helper-text" data-error="Make Sure it's Formatted Properly" data-success=""></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12" style="margin-top:-10px">
+                  <i class="material-icons prefix" style="color:purple">phone_iphone</i>
+                  <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Apple</option>
+                    <option value="2">Android</option>
+                    <option value="3">Other</option>
+                  </select>
+                  <label>Type of Device</label>
+                </div>
+             </div>
+              <div class="row">
+                <div class="input-field col s12" style="margin-top:-10px">
+                  <i class="material-icons prefix" style="color:purple">description</i>
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Description of issue</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12" style="margin-top:-10px">
+                  <i class="material-icons prefix" style="color:purple">calendar_month</i>
+                  <input type="text" class="datepicker">
+                  <label for="datepicker">Choose a date</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-purple btn-flat">Submit</a>
+        </div>
+      </div>
+
+      <div class="z-depth-3 container">
+        <h6 class="center-align" style="padding-top:10px; color:purple; font-weight:bold">Quick Contact</h6>
+        <div class="row">
+          <form class="col s12">
+            <div class="row" style="margin-bottom:-10px">
+              <div class="input-field inputField col s6">
+                <i class="material-icons prefix" style="color:purple">person</i>
+                <input type="text" id="first_name" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field inputField col s6">
+                <i class="material-icons prefix" style="color:purple">person</i>
+                <input type="text" id="last_name" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row" style="margin-bottom:-10px">
+              <div class="input-field inputField col s12" style="margin-top:-7px">
+                <i class="material-icons prefix" style="color:purple">forward_to_inbox</i>
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+                <span class="helper-text" data-error="Make Sure it's Formatted Properly" data-success=""></span>
+              </div>
+            </div>
+            <div class="row" style="margin-bottom:-10px">
+              <div class="input-field inputField col s12" style="margin-top:-23px">
+                <i class="material-icons prefix" style="color:purple">description</i>
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Leave a Message</label>
+              </div>
+            </div>
+          </form>
+          <div class="center-align">
+            <button class="btn waves-effect waves-light purple darken-1" type="submit" name="action" style="margin-top:-20px; margin-bottom:10px; color:yellow">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <script src="/js/app.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    
+      <script>
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+        });
+        $(document).ready(function(){
+          $('.collapsible').collapsible();
+          $('.modal').modal();
+        });
+        $(document).ready(function(){
+          $('select').formSelect();
+        });
+        $(document).ready(function(){
+          $('.datepicker').datepicker();
+        });
+          // Optional: Add options for the date picker
+          var options = {
+            format: 'yyyy-mm-dd',
+            autoClose: true,
+            showClearBtn: true,
+            minDate: new Date(),
+            // ... add more options here as needed
+          };
+      </script>
+
+</body>
+</html>
