@@ -1,0 +1,72 @@
+/* This is for socialmedia.html */
+.c0ntainer{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .icons a{
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 40px;
+    background-color: white;
+    margin: 10px;
+    background-size: 100% 200%;
+    background-position: 0% 5%;
+    transition: background-position 0.5s, color 0.5s;
+  }
+  @media only screen and (max-width: 370px){
+    .icons a{
+      width:90px;
+      height:90px
+    }
+  }
+  @media only screen and (max-width: 340px){
+    .icons a{
+      width:80px;
+      height:80px
+    }
+  }
+  .iTwitter{
+    color: #1DA1F2;
+    background-image: linear-gradient(#fff 50%, #1DA1F2 50%);
+  }
+  .iInstagram{
+    color: #FFC0CB;
+    background-image: linear-gradient(#fff 50%, #FFC0CB 50%);
+  }
+  .iYoutube{
+    color: #FF0000;
+    background-image: linear-gradient(#fff 50%, #FF0000 50%);
+  }
+  .iDistrict{
+    color: #8e24aa;
+    background-image: linear-gradient(#fff 50%, #8e24aa 50%);
+  }
+  .iLibrary{
+    color: #5C4033;
+    background-image: linear-gradient(#fff 50%, #5C4033 50%);
+  }
+  .iPowerschool{
+    color: #00427c;
+    background-image: linear-gradient(#fff 50%, #00427c 50%);
+  }
+  a:hover{
+    background-position: 0% 100%;
+    color:white;
+  }
+
+  .particle{
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+    }
+
+  
