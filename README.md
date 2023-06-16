@@ -24,7 +24,7 @@ Requires any browser, but best experience with more up-to-date versions of Safar
  
 ## Installation
  
-Install starts as loading up the Wauconda Doghouse website as normal using the specified QR code or link: [https://waucondadoghouse.com](https://waucondadoghouse.com). With the website pulled up, simply add it (download it depending on the device) to the home screen as an application.
+Install starts with loading up the Wauconda Doghouse website as normal using the specified QR code or link: [https://waucondadoghouse.com](https://waucondadoghouse.com). With the website pulled up, simply add it (download it depending on the device) to the home screen as an application.
  
 ## To do
  
